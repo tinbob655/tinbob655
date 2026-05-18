@@ -42,10 +42,14 @@ h1, h2, h3, p {
   &.alignLeft {
     margin-left: $alignLeftRightMargin;
     margin-right: unset;
+    text-align: left;
+    transform-origin: left;
   }
 
   &.alignRight {
     margin-right: $alignLeftRightMargin;
     margin-left: auto;
+    text-align: right;
+    transform-origin: right;
   }
 }

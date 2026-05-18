@@ -10,6 +10,39 @@ body {
   border: none;
 }
 
+div {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+
+  &.dividerLine {
+    width: 66%;
+    height: 5px;
+    background-color: vars.$color-accent-teal;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  //by default images should not be too massive
+  max-width: 33vw;
+  max-height: 33vh;
+}
+
 .noVerticalSpacing {
   margin-top: 0;
   margin-bottom: 0;
