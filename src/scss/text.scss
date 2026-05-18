@@ -1,0 +1,51 @@
+@use './variables' as vars;
+
+h1 {
+  font-family: vars.$font-heading;
+  color: vars.$color-text-secondary;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: vars.$font-heading;
+  color: vars.$color-text-tertiary;
+  font-weight: 300;
+}
+
+h3 {
+  font-family: vars.$font-paragraph;
+  color: vars.$color-text-tertiary;
+  cursor: pointer;
+
+  $enlargementMultiplier: 1.075;
+  max-width: calc(100vw / $enlargementMultiplier);
+
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+
+  &:hover {
+    transform: scale($enlargementMultiplier);
+  }
+}
+
+p {
+  font-family: vars.$font-paragraph;
+  color: vars.$color-text-primary;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+  margin: auto;
+
+  $alignLeftRightMargin: 7.5%;
+  &.alignLeft {
+    margin-left: $alignLeftRightMargin;
+    margin-right: unset;
+  }
+
+  &.alignRight {
+    margin-right: $alignLeftRightMargin;
+    margin-left: auto;
+  }
+}

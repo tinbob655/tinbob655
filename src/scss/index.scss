@@ -1,0 +1,18 @@
+@use './variables.scss' as vars;
+
+//import other stylesheets
+@use './text';
+
+body {
+  background-color: vars.$color-bg-primary;
+  margin: 0;
+  padding: 20px;
+  border: none;
+}
+
+.noVerticalSpacing {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
