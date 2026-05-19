@@ -10,6 +10,7 @@ h2 {
   font-family: vars.$font-heading;
   color: vars.$color-text-tertiary;
   font-weight: 300;
+  margin-bottom: 10px;
 }
 
 h3 {
@@ -18,7 +19,7 @@ h3 {
   cursor: pointer;
 
   $enlargementMultiplier: 1.075;
-  max-width: calc(100vw / $enlargementMultiplier);
+  max-width: calc(75vw);
 
   transition-property: transform;
   transition-duration: 0.5s;
@@ -36,7 +37,8 @@ p {
 
 h1, h2, h3, p {
   text-align: center;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 
   $alignLeftRightMargin: 7.5%;
   &.alignLeft {
