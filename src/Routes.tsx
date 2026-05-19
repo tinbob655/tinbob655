@@ -22,7 +22,7 @@ function getRoutes():React.ReactElement[] {
     //create pages
     pageInfo.forEach((page) => {
         res.push(
-            <Route path={page[0]} element={page[1]} />
+            <Route path={page[0]} element={page[1]} key={page[0]} />
         );
     })
     return res;

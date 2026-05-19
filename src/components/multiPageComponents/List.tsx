@@ -34,7 +34,7 @@ function generateList(elements:string[]):React.ReactElement[] {
 
     elements.forEach((element) => {
         res.push(
-            <React.Fragment>
+            <React.Fragment key={element}>
                 <li>
                     {element}
                 </li>
