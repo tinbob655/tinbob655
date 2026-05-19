@@ -4,6 +4,7 @@ import GenericMarkupSection from "../../multiPageComponents/GenericMarkupSection
 import List from "../../multiPageComponents/List.tsx";
 import Contributions from "./Contributions.tsx";
 import Social from "./Social.tsx";
+import Project from "./Project.tsx";
 
 export default function Home():React.ReactElement {
 
@@ -91,19 +92,37 @@ export default function Home():React.ReactElement {
                     <p>
                         In my time I've worked on several projects for dedicated clients. These include:
                     </p>
-                    <List ordered={false} left={false}
-                          elements={[
-                              `The Hunter PCs website. This was for my own startup selling high-end Gaming PCs. The website
-                              was the first of many to come. It used a React frontend and a Firebase backend to handle
-                              user accounts, baskets and a fully working payment system!`
-                              ,
-                              `The online debating platform: Verbose debate & discussion. This was a web app which used a React + Vite
-                              frontend as well as an express backend. It allowed users to vote on daily polls, reply to a daily question
-                              and even follow each other!`
-                              ,
-                              `The website for Banham Education Consultancy. This used a React + Vite frontend and created a large 
-                              amount of business for Banham. The UI was designed to look professional and polished.`
-                          ]} />
+                    <div style={{ display: 'grid',
+                        gridTemplateColumns: 'repeat(3, 1fr)',
+                        gridTemplateRows: 'auto',
+                        gap: '16px'}}>
+                        <Project
+                            name={"Verbose"}
+                            description="A social media and debating platform with daily polls, questions, and an Android/iOS app."
+                            tags={["React", "Vite", "Express", "Firebase"]}
+                            url="https://github.com/tinbob655/verbose-debate-and-discussion"
+                            style={{gridRow: "span 2"}}
+                        />
+                        <Project
+                            name={"Hunter PCs"}
+                            description={"The website for my own start up selling Gaming PCS. Users can add items to their baskets and make purchases through Stripe."}
+                            tags={["React", "Vite", "Express", "Firebase", "StripeAPI"]}
+                            url={"https://github.com/tinbob655/hunter-pcs-site"}
+                        />
+                        <Project
+                            name={"Banham Education Consultancy"}
+                            description={"A website for a company which provided dedicated tutoring, specialising in History."}
+                            tags={["React", "Vite"]}
+                            url={"https://github.com/tinbob655/banham-education-consultancy"}
+                        />
+                        <Project
+                            name={"Northgate Maths"}
+                            description={"The website for the maths department at Northgate Sixth Form"}
+                            tags={["React", "Vite", "Express", "SQLite", "Hosting"]}
+                            url={"https://github.com/tinbob655/northgatesf-maths"}
+                            style={{gridColumn: "span 2"}}
+                        />
+                    </div>
                 </React.Fragment>
             </GenericMarkupSection>
 
@@ -113,19 +132,37 @@ export default function Home():React.ReactElement {
                     <p>
                         I have also created a whole host of projects just for fun! These include:
                     </p>
-                    <List ordered={false} left={true}
-                          elements={[
-                              `Java chess. This runs in a browser with a React + Vite frontend and uses a Java + Spring Boot backend.
-                              The player plays against an intelligent and optimised bot which uses minimax, alpha-beta pruning, parallelism
-                              and a transposition table. Because of these optimisations, the bot is able to look 4 moves into the future and is
-                              very difficult to beat!`
-                              ,
-                              `Toasties Sunday. This was a website I used to sell toasties to my mates on a Sunday. It uses a React + Vite frontend and an
-                              Express + Railway backend. Users are able to make accounts, add items to their baskets and even place orders with Stripe.`
-                              ,
-                              `Tinbob's Tunes. This is an Android app which allows people to listen to and enjoy the music I create on my music account
-                              (NewRinaldi on all major streaming services!)`
-                          ]} />
+                    <div style={{ display: 'grid',
+                        gridTemplateColumns: 'repeat(3, 1fr)',
+                        gridTemplateRows: 'auto',
+                        gap: '16px'}}>
+                        <Project
+                            name={"Chess Engine"}
+                            description="A chess engine with a React frontend and Java backend, using minimax with alpha-beta pruning to look 4 moves ahead."
+                            tags={["React", "Java", "Spring Boot", "OOP", "Minimax"]}
+                            url="https://github.com/tinbob655/tinbobs-chess"
+                            style={{gridColumn: "span 2"}}
+                        />
+                        <Project
+                            name={"Tinbob's Tunes"}
+                            description={"An Android app which allows users to listen to and enjoy the music I make (NewRinaldi on major streaming services!)"}
+                            tags={["React", "Capacitor", "Kotlin", "Android"]}
+                            url={"https://github.com/tinbob655/tinbobs-tunes"}
+                            style={{gridRow: "span 2"}}
+                        />
+                        <Project
+                            name={"Toasties Sunday"}
+                            description={"A fun website I used to start a catering service with my mates!"}
+                            tags={["React", "Vite", "Express", "StripeAPI", "SQLite"]}
+                            url={"https://github.com/tinbob655/toasties-sunday"}
+                        />
+                        <Project
+                            name={"Connect-4"}
+                            description={"A very simple game of connect-4 written in Java with a basic Swing UI"}
+                            tags={["Java", "Swing", "Minimax", "OOP"]}
+                            url={"https://github.com/tinbob655/java-connect-4"}
+                        />
+                    </div>
                 </React.Fragment>
             </GenericMarkupSection>
 
