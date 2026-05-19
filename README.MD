@@ -1,6 +1,7 @@
 # Hey, I'm Tinbob 👋
 
 I'm a developer who loves to build and tinker — from small personal projects to larger, more complex systems for clients.
+[Find out more about me here!](https://tinbob655.github.io/tinbob655/)
 
 ## 🛠️ Technologies I work with
 
