@@ -109,15 +109,15 @@ export default function Home():React.ReactElement {
                     <div style={{ display: 'flex', justifyContent: "space-between"}}>
                         <Social name={"GitHub"}
                                 socialURL={new URL("https://github.com/tinbob655")}
-                                imagePath={"/socialLogos/github.png"}
+                                imagePath={"socialLogos/github.png"}
                                 />
                         <Social name={"LinkedIn"}
                                 socialURL={new URL("https://linkedin.com/in/will-rutland")}
-                                imagePath={"/socialLogos/linkedin.png"}
+                                imagePath={"socialLogos/linkedin.png"}
                                 />
                         <Social name={"Discord"}
                                 socialURL={new URL("https://discord.com/users/tinbob655")}
-                                imagePath={"/socialLogos/discord.png"} />
+                                imagePath={"socialLogos/discord.png"} />
                     </div>
                 </React.Fragment>
             </GenericMarkupSection>
