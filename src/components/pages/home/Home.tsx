@@ -106,14 +106,19 @@ export default function Home():React.ReactElement {
                         If you want to ask me to help out with a project, contract me some work or just want to chat then
                         here is where you can find me:
                     </p>
-                    <Social name={"GitHub"}
-                            socialURL={new URL("https://github.com/tinbob655")}
-                            imagePath={"/socialLogos/github.png"}
-                            />
-                    <Social name={"LinkedIn"}
-                            socialURL={new URL("https://linkedin.com/in/will-rutland")}
-                            imagePath={"/socialLogos/linkedin.png"}
-                            />
+                    <div style={{ display: 'flex', justifyContent: "space-between"}}>
+                        <Social name={"GitHub"}
+                                socialURL={new URL("https://github.com/tinbob655")}
+                                imagePath={"/socialLogos/github.png"}
+                                />
+                        <Social name={"LinkedIn"}
+                                socialURL={new URL("https://linkedin.com/in/will-rutland")}
+                                imagePath={"/socialLogos/linkedin.png"}
+                                />
+                        <Social name={"Discord"}
+                                socialURL={new URL("https://discord.com/users/tinbob655")}
+                                imagePath={"/socialLogos/discord.png"} />
+                    </div>
                 </React.Fragment>
             </GenericMarkupSection>
         </React.Fragment>
