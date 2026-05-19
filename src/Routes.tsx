@@ -1,5 +1,7 @@
 import React from 'react';
 import {Route, Routes} from 'react-router';
+
+//import all pages
 import Home from "./components/pages/home/Home.tsx";
 
 export default function AllRoutes():React.ReactElement {
