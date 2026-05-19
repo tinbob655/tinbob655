@@ -2,6 +2,7 @@
 
 //import other stylesheets
 @use './text';
+@use 'list';
 
 body {
   background-color: vars.$color-bg-primary;
@@ -29,7 +30,6 @@ button {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
 }
 

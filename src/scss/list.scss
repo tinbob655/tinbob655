@@ -1,0 +1,29 @@
+@use './variables' as vars;
+
+ul, ol {
+  color: vars.$color-accent-teal-muted;
+}
+
+ul {
+  list-style: none;
+}
+
+//give bullets a colour
+ul li::before {
+
+  //create the bullet
+  content: "•";
+  color: vars.$color-accent-teal;
+
+  //spacing
+  display: inline-block;
+  width: 1em;
+  margin-left: -0.9em;
+}
+
+li {
+  color: vars.$color-text-primary;
+  font-weight: 500;
+  font-size: 17px;
+  font-family: vars.$font-heading;
+}
