@@ -85,6 +85,50 @@ export default function Home():React.ReactElement {
                 </React.Fragment>
             </GenericMarkupSection>
 
+            {/*for clients section*/}
+            <GenericMarkupSection left={false} heading={"For Clients"} >
+                <React.Fragment>
+                    <p>
+                        In my time I've worked on several projects for dedicated clients. These include:
+                    </p>
+                    <List ordered={false} left={false}
+                          elements={[
+                              `The Hunter PCs website. This was for my own startup selling high-end Gaming PCs. The website
+                              was the first of many to come. It used a React frontend and a Firebase backend to handle
+                              user accounts, baskets and a fully working payment system!`
+                              ,
+                              `The online debating platform: Verbose debate & discussion. This was a web app which used a React + Vite
+                              frontend as well as an express backend. It allowed users to vote on daily polls, reply to a daily question
+                              and even follow each other!`
+                              ,
+                              `The website for Banham Education Consultancy. This used a React + Vite frontend and created a large 
+                              amount of business for Banham. The UI was designed to look professional and polished.`
+                          ]} />
+                </React.Fragment>
+            </GenericMarkupSection>
+
+            {/*for fun section*/}
+            <GenericMarkupSection left={true} heading={"For Fun"} >
+                <React.Fragment>
+                    <p>
+                        I have also created a whole host of projects just for fun! These include:
+                    </p>
+                    <List ordered={false} left={true}
+                          elements={[
+                              `Java chess. This runs in a browser with a React + Vite frontend and uses a Java + Spring Boot backend.
+                              The player plays against an intelligent and optimised bot which uses minimax, alpha-beta pruning, parallelism
+                              and a transposition table. Because of these optimisations, the bot is able to look 4 moves into the future and is
+                              very difficult to beat!`
+                              ,
+                              `Toasties Sunday. This was a website I used to sell toasties to my mates on a Sunday. It uses a React + Vite frontend and an
+                              Express + Railway backend. Users are able to make accounts, add items to their baskets and even place orders with Stripe.`
+                              ,
+                              `Tinbob's Tunes. This is an Android app which allows people to listen to and enjoy the music I create on my music account
+                              (NewRinaldi on all major streaming services!)`
+                          ]} />
+                </React.Fragment>
+            </GenericMarkupSection>
+
             {/*tech stack*/}
             <GenericMarkupSection left={false} heading={"Tech Stack"} >
                 <React.Fragment>
