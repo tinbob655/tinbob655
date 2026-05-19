@@ -5,11 +5,11 @@ import './scss/index.scss';
 import Header from "./components/multiPageComponents/Header.tsx";
 import AllRoutes from "./Routes.tsx";
 import Footer from "./components/multiPageComponents/Footer.tsx";
-import {BrowserRouter} from "react-router";
+import {HashRouter} from "react-router";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-      <BrowserRouter>
+      <HashRouter>
 
         <header>
           <Header/>
@@ -23,6 +23,6 @@ createRoot(document.getElementById('root')!).render(
           <Footer/>
         </footer>
 
-      </BrowserRouter>
+      </HashRouter>
   </StrictMode>,
 )
