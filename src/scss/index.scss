@@ -7,6 +7,7 @@
 @use './scrollbar';
 @use './components';
 @use './list';
+@use './contributions';
 
 body {
   background-color: vars.$color-bg-primary;

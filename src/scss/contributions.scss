@@ -1,0 +1,21 @@
+@use './variables' as vars;
+
+div.contributionsWrapper {
+
+  //make all text look like a paragraph
+  font-family: vars.$font-paragraph;
+  color: vars.$color-text-primary;
+
+  //this represents the entire content of the github contributions
+  & article {
+    margin-left: 2%;
+    margin-right: auto;
+    display: block;
+    width: max-content;
+  }
+
+  //this is the grid itself (no text)
+  & div.react-activity-calendar__scroll-container {
+    background-color: transparent;
+  }
+}
