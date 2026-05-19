@@ -18,7 +18,7 @@ export default function PageHeader({title, subheading}:params):React.ReactElemen
                 </p>
             </div>
 
-            <hr className={"sectionDivider"} />
+            <div className={"sectionDivider"} />
         </React.Fragment>
     )
 }

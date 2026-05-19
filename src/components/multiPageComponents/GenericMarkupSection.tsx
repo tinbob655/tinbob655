@@ -25,7 +25,7 @@ export default function GenericMarkupSection({left, heading, children}:params):R
                 {children}
             </section>
 
-            <hr className={"sectionDivider"} />
+            <div className={"sectionDivider"} />
         </React.Fragment>
     )
 }
