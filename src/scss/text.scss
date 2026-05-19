@@ -35,6 +35,22 @@ p {
   color: vars.$color-text-primary;
 }
 
+//define alignment rules
+$alignLeftRightMargin: 7.5%;
+@mixin leftAlignedText {
+  margin-left: $alignLeftRightMargin;
+  margin-right: unset;
+  text-align: left;
+  transform-origin: left;
+}
+
+@mixin rightAlignedText {
+  margin-right: $alignLeftRightMargin;
+  margin-left: auto;
+  text-align: right;
+  transform-origin: right;
+}
+
 h1, h2, h3, p {
   text-align: center;
   margin-left: auto;
@@ -42,16 +58,18 @@ h1, h2, h3, p {
 
   $alignLeftRightMargin: 7.5%;
   &.alignLeft {
-    margin-left: $alignLeftRightMargin;
-    margin-right: unset;
-    text-align: left;
-    transform-origin: left;
+    @include leftAlignedText;
   }
 
   &.alignRight {
-    margin-right: $alignLeftRightMargin;
-    margin-left: auto;
-    text-align: right;
-    transform-origin: right;
+    @include rightAlignedText;
   }
+}
+
+//automatically apply paragraph alignment to children of section
+section.alignLeft > p {
+  @include leftAlignedText
+}
+section.alignRight > p {
+  @include rightAlignedText;
 }

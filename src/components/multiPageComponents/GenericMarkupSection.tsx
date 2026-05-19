@@ -14,7 +14,7 @@ export default function GenericMarkupSection({left, heading, children}:params):R
 
     return (
         <React.Fragment>
-            <section className={"contentSection"}>
+            <section className={`contentSection ${alignment}`}>
 
                 <div className={left ? "section" : "section sectionRight"}>
                     <h2 className={alignment}>
