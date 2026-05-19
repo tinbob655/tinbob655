@@ -1,0 +1,88 @@
+@use './variables' as vars;
+
+
+//cards appear lifted off the page and will stand out
+div.card {
+  background: vars.$color-bg-secondary;
+  border: 1px solid vars.$color-border-default;
+  border-radius: 3px;
+  padding: 24px 28px;
+  transition:
+          border-color 0.3s ease,
+          box-shadow   0.3s ease,
+          transform    0.3s ease;
+
+  &:hover {
+    border-color: vars.$color-border-accent;
+    box-shadow: vars.$shadow-glow, vars.$shadow-md;
+    transform: translateY(-2px);
+  }
+}
+
+//small labels / badges
+.tag {
+  display: inline-block;
+  font-family: vars.$font-paragraph;
+  font-size: 0.72rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: vars.$color-accent-teal;
+  background: vars.$color-accent-teal-dim;
+  border: 1px solid vars.$color-border-accent;
+  border-radius: 2px;
+  padding: 2px 8px;
+  line-height: 1.6;
+}
+
+//a small divider line
+.accentLine {
+  width: 40px;
+  height: 3px;
+  background: vars.$color-accent-teal;
+  box-shadow: vars.$shadow-glow;
+  margin-bottom: 14px;
+  border-radius: 1px;
+
+  .sectionRight & {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+//make the page header look nice
+.pageHeader {
+  padding: 48px 0 12px;
+
+  h1 {
+    font-size: clamp(2.4rem, 6vw, 4rem);
+    text-shadow: 0 0 40px rgba(#19D4A8, 0.25);
+    letter-spacing: -0.01em;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  p {
+    text-align: left;
+    margin-top: 8px;
+    opacity: 0.7;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+  }
+}
+
+//section titles
+.section h2,
+h2.sectionTitle {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  margin-bottom: 24px;
+  letter-spacing: 0.01em;
+}
+
+//makes any element glow slightly
+.glowBox {
+  border: 1px solid vars.$color-border-accent;
+  box-shadow: vars.$shadow-glow;
+  border-radius: 3px;
+  padding: 20px 24px;
+  background: vars.$color-bg-secondary;
+}

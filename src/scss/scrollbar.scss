@@ -1,0 +1,17 @@
+@use './variables' as vars;
+
+//make the scrollbar match the theme
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: vars.$color-bg-primary;
+}
+::-webkit-scrollbar-thumb {
+  background: vars.$color-border-default;
+  border-radius: 3px;
+
+  &:hover {
+    background: vars.$color-border-accent;
+  }
+}

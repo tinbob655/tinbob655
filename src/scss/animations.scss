@@ -1,0 +1,69 @@
+@use './variables' as vars;
+
+// ─── Keyframes ───────────────────────────────────────────────────────────────
+
+//elements slide up and fade in on page load
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+//a slow pulse animation
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px rgba(#19D4A8, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(#19D4A8, 0.55));
+  }
+}
+
+//sweeps across a border for the header
+@keyframes scanLine {
+  from { transform: scaleX(0); transform-origin: left; }
+  to   { transform: scaleX(1); transform-origin: left; }
+}
+
+//load all children of content slightly staggered
+#content > * {
+  animation: fadeUp 0.55s ease both;
+
+  //creates the delay
+  @for $i from 1 through 12 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.2}s;
+    }
+  }
+}
+
+//header logo will pulse
+header img {
+  animation: glowPulse 4s ease-in-out infinite;
+}
+
+//header will have the border swept across
+header::after {
+  animation: scanLine 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.2s;
+}
+
+//divider will also be swept across
+.sectionDivider {
+  animation: scanLine 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: 0.35s;
+}
+
+//the user may want reduced motion in which case animations should be killed
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-delay: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -3,15 +3,17 @@ import React from 'react';
 interface params {
     ordered: boolean,
     elements: string[];
+    left: boolean;
 }
 
-export default function List({ordered, elements}:params):React.ReactElement {
+export default function List({ordered, elements, left}:params):React.ReactElement {
 
+    const alignment:string = left ? "" : "alignRight";
 
     //ordered list
     if (ordered) {
         return (
-            <ol>
+            <ol className={alignment}>
                 {generateList(elements)}
             </ol>
         )
@@ -20,7 +22,7 @@ export default function List({ordered, elements}:params):React.ReactElement {
     //unordered list
     else {
         return (
-            <ul>
+            <ul className={alignment}>
                 {generateList(elements)}
             </ul>
         )

@@ -2,28 +2,94 @@
 
 ul, ol {
   color: vars.$color-accent-teal-muted;
+  padding-left: 1.6em;
 }
 
 ul {
   list-style: none;
 }
 
-//give bullets a colour
+
 ul li::before {
+  content: '';
 
-  //create the bullet
-  content: "•";
-  color: vars.$color-accent-teal;
-
-  //spacing
+  //create a diamond shape for bullets
   display: inline-block;
-  width: 1em;
-  margin-left: -0.9em;
+  width: 6px;
+  height: 6px;
+  background-color: vars.$color-accent-teal;
+  transform: rotate(45deg);
+
+  box-shadow: 0 0 6px rgba(#19D4A8, 0.7);
+
+  margin-right: 0.75em;
+  margin-left: -1.4em;
+  vertical-align: 0.1em;
+
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+
+ul li:hover::before {
+  transform: rotate(45deg) scale(1.4);
+  box-shadow: 0 0 10px rgba(#19D4A8, 0.9);
+}
+
+
+ol {
+  list-style: none;
+  counter-reset: teal-counter;
+
+  li {
+    counter-increment: teal-counter;
+
+    &::before {
+      content: counter(teal-counter, decimal-leading-zero);
+      font-family: vars.$font-heading;
+      font-size: 0.75em;
+      color: vars.$color-accent-teal;
+      opacity: 0.7;
+      letter-spacing: 0.05em;
+      margin-right: 0.6em;
+      margin-left: -2em;
+      display: inline-block;
+      width: 1.6em;
+      text-align: right;
+      vertical-align: 0.05em;
+      transition: opacity 0.2s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
 
 li {
   color: vars.$color-text-primary;
   font-weight: 500;
   font-size: 17px;
   font-family: vars.$font-heading;
+  padding: 3px 0;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: vars.$color-text-primary;
+  }
+}
+
+//give lists the option to be on the right
+ul.alignRight, ol.alignRight {
+  margin-right: 10%;
+  margin-left: auto;
+  width: fit-content;
+  text-align: right;
+}
+
+ul.alignRight li::before {
+  margin-right: -1.4em;
+  margin-left: 0.75em;
+  float: right;
 }

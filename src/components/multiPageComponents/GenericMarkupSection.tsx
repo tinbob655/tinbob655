@@ -15,14 +15,17 @@ export default function GenericMarkupSection({left, heading, children}:params):R
     return (
         <React.Fragment>
             <section className={"contentSection"}>
-                <h2 className={alignment}>
-                    {heading}
-                </h2>
+
+                <div className={left ? "section" : "section sectionRight"}>
+                    <h2 className={alignment}>
+                        {heading}
+                    </h2>
+                </div>
 
                 {children}
             </section>
 
-            <div className={"dividerLine"}></div>
+            <hr className={"sectionDivider"} />
         </React.Fragment>
     )
 }

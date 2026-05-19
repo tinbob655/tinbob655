@@ -1,46 +1,30 @@
 @use './variables.scss' as vars;
 
-//import other stylesheets
+//get other stylesheets
 @use './text';
-@use 'list';
+@use './layout';
+@use './animations';
+@use './scrollbar';
+@use './components';
+@use './list';
 
 body {
   background-color: vars.$color-bg-primary;
   margin: 0;
-  padding: 20px;
-  border: none;
-}
-
-div {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-
-  &.dividerLine {
-    width: 66%;
-    height: 5px;
-    background-color: vars.$color-accent-teal;
-  }
-}
-
-button {
-  background-color: transparent;
-  border: none;
   padding: 0;
+  border: none;
 }
 
 a {
-  color: inherit;
-}
+  color: vars.$color-accent-teal;
+  text-decoration: none;
+  border-bottom: 1px solid vars.$color-border-accent;
+  transition: color 0.2s ease, border-color 0.2s ease;
 
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-  //by default images should not be too massive
-  max-width: 33vw;
-  max-height: 33vh;
+  &:hover {
+    color: vars.$color-text-primary;
+    border-bottom-color: rgba(#EEF3FF, 0.4);
+  }
 }
 
 .noVerticalSpacing {
