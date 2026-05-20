@@ -17,7 +17,7 @@ export default function GenericMarkupSection({left, heading, children}:params):R
             <section className={`contentSection ${alignment}`}>
 
                 <div className={left ? "section" : "section sectionRight"}>
-                    <h2 className={alignment}>
+                    <h2 className={alignment + " sectionHeader"}>
                         {heading}
                     </h2>
                 </div>

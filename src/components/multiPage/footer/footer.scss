@@ -5,3 +5,19 @@ p.footerParagraph {
 a.footerLink {
   text-decoration: none !important;
 }
+
+div.footerLinksWrapper {
+  display: flex;
+  justify-content: center;
+  width: 66%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.footerLink {
+  filter: grayscale(0.75);
+
+  $marginLeftRight: 1em;
+  margin-left: $marginLeftRight;
+  margin-right: $marginLeftRight;
+}

@@ -25,6 +25,7 @@ body {
 
 a {
   color: vars.$color-accent-teal;
+  cursor: pointer;
   text-decoration: none;
   border-bottom: 1px solid vars.$color-border-accent;
   transition: color 0.2s ease, border-color 0.2s ease;
