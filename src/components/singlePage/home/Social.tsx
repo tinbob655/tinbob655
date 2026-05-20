@@ -1,5 +1,5 @@
 import React from 'react';
-import FormattedImage from "../../multiPageComponents/FormattedImage.tsx";
+import FormattedImage from "../../multiPage/FormattedImage.tsx";
 
 interface params {
     name: string,
