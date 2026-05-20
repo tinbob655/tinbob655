@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react';
+import {useEffect} from 'react';
 import {useLocation} from "react-router";
 
-export default function ScrollToTop():React.ReactElement {
+export default function ScrollToTop():null {
 
     const location = useLocation();
 
@@ -10,7 +10,5 @@ export default function ScrollToTop():React.ReactElement {
         window.scrollTo(0, 0);
     }, [location]);
 
-    return (
-        <React.Fragment></React.Fragment>
-    )
+    return null;
 }
