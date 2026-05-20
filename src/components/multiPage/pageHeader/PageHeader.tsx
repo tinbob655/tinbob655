@@ -1,4 +1,5 @@
 import React from 'react';
+import './pageHeader.scss';
 
 interface params {
     title: string,
@@ -10,10 +11,10 @@ export default function PageHeader({title, subheading}:params):React.ReactElemen
     return (
         <React.Fragment>
             <div className={"pageHeader"}>
-                <h1 className={"noVerticalSpacing alignLeft"} style={{marginTop: '20px', marginLeft: '10%'}}>
+                <h1 className={"noVerticalSpacing alignLeft pageHeaderH1"}>
                     {title}
                 </h1>
-                <p className={"noVerticalSpacing alignLeft"} style={{marginBottom: '20px', marginLeft: '12.5%'}}>
+                <p className={"noVerticalSpacing alignLeft pageHeaderP"}>
                     {subheading}
                 </p>
             </div>

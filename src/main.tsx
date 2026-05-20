@@ -4,7 +4,7 @@ import './scss/index.scss';
 
 import Header from "./components/multiPage/Header.tsx";
 import AllRoutes from "./Routes.tsx";
-import Footer from "./components/multiPage/Footer.tsx";
+import Footer from "./components/multiPage/footer/Footer.tsx";
 import {HashRouter} from "react-router";
 import ScrollToTop from "./components/multiPage/ScrollToTop.tsx";
 

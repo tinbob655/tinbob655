@@ -19,7 +19,7 @@ export default function Project({name, description, tags, url, ...props}:params)
             </p>
 
             {/*tech tags*/}
-            <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap', marginTop: '12px' }}>
+            <div className={"projectTagsWrapper"}>
                 {tags.map(tag => (
                     <span key={tag} className="tag">
                         {tag}
@@ -27,11 +27,11 @@ export default function Project({name, description, tags, url, ...props}:params)
                 ))}
             </div>
 
-            <a href={url} target="_blank">
-                <h3>
+            <p>
+                <a href={url} target="_blank">
                     View on GitHub →
-                </h3>
-            </a>
+                </a>
+            </p>
         </div>
     )
 }

@@ -1,10 +1,11 @@
 import React from 'react';
-import PageHeader from "../../multiPage/PageHeader.tsx";
+import PageHeader from "../../multiPage/pageHeader/PageHeader.tsx";
 import GenericMarkupSection from "../../multiPage/GenericMarkupSection.tsx";
 import List from "../../multiPage/List.tsx";
 import Contributions from "./Contributions.tsx";
 import Social from "./Social.tsx";
 import Project from "./Project.tsx";
+import './home.scss';
 
 export default function Home():React.ReactElement {
 
@@ -92,10 +93,7 @@ export default function Home():React.ReactElement {
                     <p>
                         In my time I've worked on several projects for dedicated clients. These include:
                     </p>
-                    <div style={{ display: 'grid',
-                        gridTemplateColumns: 'repeat(3, 1fr)',
-                        gridTemplateRows: 'auto',
-                        gap: '16px'}}>
+                    <div className={"projectsWrapper"}>
                         <Project
                             name={"Verbose"}
                             description="A social media and debating platform with daily polls, questions, and an Android/iOS app."
@@ -132,10 +130,7 @@ export default function Home():React.ReactElement {
                     <p>
                         I have also created a whole host of projects just for fun! These include:
                     </p>
-                    <div style={{ display: 'grid',
-                        gridTemplateColumns: 'repeat(3, 1fr)',
-                        gridTemplateRows: 'auto',
-                        gap: '16px'}}>
+                    <div className={"projectsWrapper"}>
                         <Project
                             name={"Chess Engine"}
                             description="A chess engine with a React frontend and Java backend, using minimax with alpha-beta pruning to look 4 moves ahead."
@@ -187,7 +182,7 @@ export default function Home():React.ReactElement {
                         If you want to ask me to help out with a project, contract me some work or just want to chat then
                         here is where you can find me:
                     </p>
-                    <div style={{ display: 'flex', justifyContent: "space-between"}}>
+                    <div className={"socialsWrapper"}>
                         <Social name={"GitHub"}
                                 socialURL={new URL("https://github.com/tinbob655")}
                                 imagePath={"socialLogos/github.png"}
