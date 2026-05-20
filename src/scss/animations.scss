@@ -42,18 +42,6 @@ body {
   }
 }
 
-//elements slide up and fade in on page load
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 //a slow pulse animation
 @keyframes glowPulse {
   0%, 100% {
@@ -68,18 +56,6 @@ body {
 @keyframes scanLine {
   from { transform: scaleX(0); transform-origin: left; }
   to   { transform: scaleX(1); transform-origin: left; }
-}
-
-//load all children of content slightly staggered
-#content > * {
-  animation: fadeUp 0.55s ease both;
-
-  //creates the delay
-  @for $i from 1 through 12 {
-    &:nth-child(#{$i}) {
-      animation-delay: #{$i * 0.2}s;
-    }
-  }
 }
 
 //header logo will pulse
