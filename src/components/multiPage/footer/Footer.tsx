@@ -27,7 +27,7 @@ export default function Footer():React.ReactElement {
 
             setLinks(res);
         }, 20);
-    })
+    }, [])
 
     return (
         <React.Fragment>
