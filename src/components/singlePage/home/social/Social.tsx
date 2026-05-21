@@ -1,6 +1,7 @@
 import React from 'react';
 import FormattedImage from "../../../multiPage/FormattedImage.tsx";
 import './social.scss';
+import {ErrorBoundary} from "react-error-boundary";
 
 interface params {
     name: string,
@@ -20,7 +21,15 @@ export default function Social({name, imagePath, socialURL}:params):React.ReactE
         <div className={"card singleSocialWrapper"}>
             <a href={socialURL.href} target={"_blank"}>
                 <div>
-                    <FormattedImage src={imagePath} alt={`The ${name} logo`} style={imageStyle} />
+                    <ErrorBoundary fallback={(
+
+                        //show the default image if we cannot format it
+                        <React.Fragment>
+                            <img src={imagePath} alt={`The ${name} logo`} style={imageStyle} />
+                        </React.Fragment>
+                    )}>
+                        <FormattedImage src={imagePath} alt={`The ${name} logo`} style={imageStyle} />
+                    </ErrorBoundary>
                 </div>
                 <p>
                     {name}
