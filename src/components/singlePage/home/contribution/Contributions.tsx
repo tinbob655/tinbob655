@@ -14,7 +14,7 @@ export default function Contributions():React.ReactElement {
                 weekStart={1}
                 tooltips={{
                     activity: {
-                        text: activity => `${activity.level} activities on ${activity.date}`,
+                        text: activity => `${activity.count} contribution${activity.count !== 1 ? 's' : ''} on ${activity.date}`,
                         placement: 'right',
                         offset: 6,
                         hoverRestMs: 300,
