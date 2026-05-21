@@ -45,10 +45,10 @@ body {
 //a slow pulse animation
 @keyframes glowPulse {
   0%, 100% {
-    opacity: 0.15
+    opacity: 0.2;
   }
   50% {
-    opacity: 0.7;
+    opacity: 0.85;
   }
 }
 
@@ -59,8 +59,8 @@ body {
 }
 
 //header logo will pulse
-header .logoWrapper &::after {
-  animation: glowPulse 10s linear infinite;
+header .logoWrapper::after {
+  animation: glowPulse 8s ease-in-out infinite;
 }
 
 //header will have the border swept across
