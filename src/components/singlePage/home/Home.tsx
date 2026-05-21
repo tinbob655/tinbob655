@@ -6,6 +6,7 @@ import Social from "./social/Social.tsx";
 import Project from "./project/Project.tsx";
 import ScrollReveal from "../../multiPage/ScrollReveal.tsx";
 import TagList from "../../multiPage/tagList/TagList.tsx";
+import CV from '../../../assets/William Rutland CV.pdf';
 
 export default function Home():React.ReactElement {
 
@@ -19,8 +20,11 @@ export default function Home():React.ReactElement {
             <ScrollReveal>
                     <GenericMarkupSection left={false} heading={"About"} >
                         <p>
-                            Hi! I'm Tinbob. I like to develop and tinker. My work  usually varies from creating my own little fun
-                            projects to creating large and complex systems for a range of clients.
+                            Hi! I'm Tinbob. I like to develop and tinker. My work usually varies from creating my own little fun
+                            projects to creating large and complex systems for a range of clients, working both in-person and online.
+                            <br/>
+                            If you are interested in my work and want to learn more about what I do then please don't hesitate
+                            to <a href={CV} download>take a look at my CV!</a>
                         </p>
                     </GenericMarkupSection>
             </ScrollReveal>
