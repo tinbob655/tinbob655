@@ -25,6 +25,7 @@ export default function Contributions():React.ReactElement {
                         withArrow: true,
                     },
                 }}
+                errorMessage={"Could not load GitHub information at this point in time. Please try again later."}
             />
         </div>
     )
