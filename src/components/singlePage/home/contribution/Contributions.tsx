@@ -1,5 +1,7 @@
 import React from 'react';
 import {GitHubCalendar} from "react-github-calendar";
+import 'react-activity-calendar/tooltips.css';
+import './contributions.scss';
 
 export default function Contributions():React.ReactElement {
 

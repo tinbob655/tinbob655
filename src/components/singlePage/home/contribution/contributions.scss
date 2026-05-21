@@ -1,0 +1,13 @@
+@use '../../../../scss/variables' as vars;
+
+
+//styles the tooltip on contributions cell hover
+.react-activity-calendar__tooltip {
+  z-index: 2;
+
+  $paddingLeftRight: 2em;
+  padding-left: $paddingLeftRight;
+  padding-right: $paddingLeftRight;
+
+  outline: 2px solid vars.$color-accent-teal-muted;
+}

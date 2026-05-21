@@ -5,20 +5,9 @@ div.projectsWrapper {
   gap: 16px;
 }
 
-div.socialsWrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 div.projectTagsWrapper {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 12px;
-}
-
-div.singleSocialWrapper {
-  flex: 1 1 140px;
-  text-align: center;
-  max-width: 25%;
 }

@@ -1,0 +1,10 @@
+div.socialsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.singleSocialWrapper {
+  flex: 1 1 140px;
+  text-align: center;
+  max-width: 25%;
+}

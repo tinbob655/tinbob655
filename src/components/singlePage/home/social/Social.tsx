@@ -1,5 +1,6 @@
 import React from 'react';
-import FormattedImage from "../../multiPage/FormattedImage.tsx";
+import FormattedImage from "../../../multiPage/FormattedImage.tsx";
+import './social.scss';
 
 interface params {
     name: string,

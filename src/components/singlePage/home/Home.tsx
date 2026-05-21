@@ -2,10 +2,9 @@ import React from 'react';
 import PageHeader from "../../multiPage/pageHeader/PageHeader.tsx";
 import GenericMarkupSection from "../../multiPage/GenericMarkupSection.tsx";
 import List from "../../multiPage/List.tsx";
-import Contributions from "./Contributions.tsx";
-import Social from "./Social.tsx";
-import Project from "./Project.tsx";
-import './home.scss';
+import Contributions from "./contribution/Contributions.tsx";
+import Social from "./social/Social.tsx";
+import Project from "./project/Project.tsx";
 import ScrollReveal from "../../multiPage/ScrollReveal.tsx";
 
 export default function Home():React.ReactElement {
