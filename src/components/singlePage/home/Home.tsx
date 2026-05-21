@@ -1,11 +1,11 @@
 import React from 'react';
 import PageHeader from "../../multiPage/pageHeader/PageHeader.tsx";
 import GenericMarkupSection from "../../multiPage/GenericMarkupSection.tsx";
-import List from "../../multiPage/List.tsx";
 import Contributions from "./contribution/Contributions.tsx";
 import Social from "./social/Social.tsx";
 import Project from "./project/Project.tsx";
 import ScrollReveal from "../../multiPage/ScrollReveal.tsx";
+import TagList from "../../multiPage/tagList/TagList.tsx";
 
 export default function Home():React.ReactElement {
 
@@ -78,8 +78,8 @@ export default function Home():React.ReactElement {
                             As previously mentioned, I am very well versed in vite + react as well as Java. However this is not the
                             limit of the technologies I am familiar with. Here is a better list of the technologies I work with most frequently:
                         </p>
-                        <List ordered={false} elements={["Java", "Vite + React", "TypeScript", "Node.js", "Docker", "SQLite", "Vercel", "Firebase",
-                            "Haskell", "C", "HTML", "SCSS"]} left={false} />
+                        <TagList tags={["Java", "Spring Boot", "Vite + React", "TypeScript", "Node.js", "Docker", "SQLite",
+                            "Vercel", "SwingUI", "Firebase", "Haskell", "C", "HTML", "SCSS", "Capacitor", "Python"]}/>
                     </React.Fragment>
                 </GenericMarkupSection>
             </ScrollReveal>
