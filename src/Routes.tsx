@@ -3,6 +3,7 @@ import {Route, Routes} from 'react-router';
 
 //import all pages
 import Home from "./components/singlePage/home/Home.tsx";
+import UnknownRoute from "./components/singlePage/unknownRoute/UnknownRoute.tsx";
 
 export default function AllRoutes():React.ReactElement {
 
@@ -24,6 +25,12 @@ function getRoutes():React.ReactElement[] {
         res.push(
             <Route path={page[0]} element={page[1]} key={page[0]} />
         );
-    })
+    });
+
+    //default route
+    res.push(
+        <Route path={'*'} element={<UnknownRoute/>} />
+    );
+
     return res;
 }
