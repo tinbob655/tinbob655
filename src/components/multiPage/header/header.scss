@@ -1,0 +1,51 @@
+@use '../../../scss/variables' as vars;
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(vars.$color-bg-primary, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+            90deg,
+            transparent 0%,
+            vars.$color-accent-teal 30%,
+            vars.$color-accent-teal 70%,
+            transparent 100%
+    );
+    opacity: 0.6;
+  }
+
+  .logoWrapper {
+    position: relative;
+    display: inline-flex;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 4px;
+      background: radial-gradient(ellipse, rgba(#19D4A8, 0.4) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    img {
+      height: 38px;
+      width: auto;
+      display: block;
+      position: relative;
+    }
+  }
+}

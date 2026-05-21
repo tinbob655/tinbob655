@@ -1,3 +1,41 @@
+@use '../../../scss/variables' as vars;
+
+footer {
+  position: relative;
+  z-index: 1;
+  margin-top: 80px;
+  padding: 28px 40px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(
+            90deg,
+            transparent 0%,
+            vars.$color-accent-teal 30%,
+            vars.$color-accent-teal 70%,
+            transparent 100%
+    );
+    opacity: 0.6;
+  }
+
+  img {
+    height: 32px;
+    width: auto;
+    opacity: 0.45;
+    transition: opacity 0.35s ease, filter 0.35s ease;
+
+    &:hover {
+      opacity: 1;
+      filter: drop-shadow(0 0 6px rgba(#19D4A8, 0.4));
+    }
+  }
+}
+
 p.footerParagraph {
   text-decoration: underline;
 }

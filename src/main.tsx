@@ -2,7 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './scss/index.scss';
 
-import Header from "./components/multiPage/Header.tsx";
+import Header from "./components/multiPage/header/Header.tsx";
 import AllRoutes from "./Routes.tsx";
 import Footer from "./components/multiPage/footer/Footer.tsx";
 import {HashRouter} from "react-router";
