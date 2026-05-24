@@ -11,3 +11,9 @@
 
   outline: 2px solid vars.$color-accent-teal-muted;
 }
+
+div.contributionsWrapper {
+  @include vars.mobile {
+    overflow-x: auto;
+  }
+}

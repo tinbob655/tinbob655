@@ -17,6 +17,10 @@ body::before {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 48px;
+
+  @include vars.mobile {
+    padding: 0 20px;
+  }
 }
 
 

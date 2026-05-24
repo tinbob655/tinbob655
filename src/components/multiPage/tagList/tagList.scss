@@ -1,8 +1,14 @@
+@use '../../../scss/variables' as vars;
+
 div.tagListWrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 16px;
+
+  @include vars.mobile {
+    gap: 4px;
+  }
 
   section.alignLeft & {
     justify-content: flex-start;
@@ -24,5 +30,10 @@ span.tagInTagList {
     background: rgba(#19D4A8, 0.28);
     box-shadow: 0 0 10px rgba(#19D4A8, 0.3);
     transform: translateY(-2px);
+  }
+
+  @include vars.mobile {
+    font-size: 0.6rem;
+    padding: 2px 7px;
   }
 }

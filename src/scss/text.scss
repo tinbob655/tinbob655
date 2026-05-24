@@ -4,6 +4,10 @@ h1 {
   font-family: vars.$font-heading;
   color: vars.$color-text-secondary;
   font-weight: bold;
+
+  @include vars.mobile {
+    font-size: 2rem;
+  }
 }
 
 h2 {
@@ -11,6 +15,10 @@ h2 {
   color: vars.$color-text-tertiary;
   font-weight: 300;
   margin-bottom: 10px;
+
+  @include vars.mobile {
+    font-size: 1.4rem;
+  }
 }
 
 h3 {
@@ -28,11 +36,21 @@ h3 {
   &:hover {
     transform: scale($enlargementMultiplier);
   }
+
+  @include vars.mobile {
+    font-size: 1rem;
+    max-width: 90vw;
+    transform: none !important;
+  }
 }
 
 p {
   font-family: vars.$font-paragraph;
   color: vars.$color-text-primary;
+
+  @include vars.mobile {
+    font-size: 0.9rem;
+  }
 }
 
 //define alignment rules

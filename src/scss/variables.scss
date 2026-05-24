@@ -22,3 +22,12 @@ $font-paragraph:    "Radio Canada", monospace;
 $shadow-sm:  0 1px 3px rgba(#000, 0.4);
 $shadow-md:  0 4px 16px rgba(#000, 0.5);
 $shadow-glow: 0 0 24px rgba(#19D4A8, 0.15);
+
+//mobile override
+$breakpointWidth: 600px;
+
+@mixin mobile {
+  @media (max-width: $breakpointWidth) {
+    @content;
+  }
+}

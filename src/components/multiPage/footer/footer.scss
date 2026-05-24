@@ -50,12 +50,22 @@ div.footerLinksWrapper {
   width: 66%;
   margin-left: auto;
   margin-right: auto;
+
+  @include vars.mobile {
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+  }
 }
 
 div.footerLink {
   filter: grayscale(0.75);
 
   $marginLeftRight: 1em;
+  @include vars.mobile {
+    $marginLeftRight: 0.5rem;
+  }
+
   margin-left: $marginLeftRight;
   margin-right: $marginLeftRight;
 }

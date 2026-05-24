@@ -11,6 +11,10 @@ header {
   display: flex;
   align-items: center;
 
+  @include vars.mobile {
+    padding: 10px 20px;
+  }
+
   &::after {
     content: '';
     position: absolute;

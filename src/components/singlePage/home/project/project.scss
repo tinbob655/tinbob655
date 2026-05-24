@@ -1,8 +1,19 @@
+@use '../../../../scss/variables' as vars;
+
 div.projectsWrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 16px;
+
+  @include vars.mobile {
+    grid-template-columns: 1fr;
+
+    & > * {
+      grid-column: span 1 !important;
+      grid-row: span 1 !important;
+    }
+  }
 }
 
 div.projectTagsWrapper {

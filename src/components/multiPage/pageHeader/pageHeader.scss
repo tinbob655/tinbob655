@@ -1,11 +1,21 @@
+@use '../../../scss/variables' as vars;
+
 $marginTopBottom: 20px;
 
 h1.pageHeaderH1 {
   margin-top: $marginTopBottom;
-  margin-left: 10%
+  margin-left: 10%;
+
+  @include vars.mobile {
+    margin-left: 0;
+  }
 }
 
 p.pageHeaderP {
   margin-bottom: $marginTopBottom;
   margin-left: 12.5%;
+
+  @include vars.mobile {
+    margin-left: 0;
+  }
 }
