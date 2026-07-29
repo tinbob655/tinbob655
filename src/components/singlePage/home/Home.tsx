@@ -121,6 +121,7 @@ export default function Home():React.ReactElement {
                                 description={"The website for my own start up selling Gaming PCS. Users can add items to their baskets and make purchases through Stripe."}
                                 tags={["React", "Vite", "Express", "Firebase", "StripeAPI"]}
                                 url={"https://github.com/tinbob655/hunter-pcs-site"}
+                                wide
                             />
                             <Project
                                 name={"Banham Education Consultancy"}
@@ -133,6 +134,13 @@ export default function Home():React.ReactElement {
                                 description={"The website for the maths department at Northgate Sixth Form"}
                                 tags={["React", "Vite", "Express", "SQLite", "Hosting"]}
                                 url={"https://github.com/tinbob655/northgatesf-maths"}
+                                tall
+                            />
+                            <Project
+                                name={"Suffolk Fresh"}
+                                description={"The advanced software for integrated automation at Suffolk Fresh"}
+                                tags={["Spring boot", "React", "Vite", "SQLite", "Websockets", "REST", "Java", "TypeScript"]}
+                                url={"https://github.com/tinbob655/suffolk-fresh"}
                                 wide
                             />
                         </div>
