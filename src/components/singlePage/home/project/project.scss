@@ -21,4 +21,15 @@ div.projectTagsWrapper {
   gap: 8px;
   flex-wrap: wrap;
   margin-top: 12px;
+
+  > .tag {
+    cursor: default;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
+
+    &:hover {
+      background: rgba(#19D4A8, 0.28);
+      box-shadow: 0 0 10px rgba(#19D4A8, 0.3);
+      transform: translateY(-2px);
+    }
+  }
 }
