@@ -10,7 +10,7 @@ I'm a developer who loves to build and tinker — from small personal projects t
 ## 🚀 Projects
 
 - **[Chess Engine](https://github.com/tinbob655/tinbobs-chess)** — A React + Java chess engine using an optimised minimax algorithm to play against the user.
-- **[Suffolk Fresh](https://github.com/tinbob655/suffolk-fresh)** - A full stack web-app to streamline processes at [Suffolk Fresh.](https://suffolkfresh.org/)
+- **[Suffolk Fresh](https://github.com/tinbob655/suffolk-fresh)** - A full stack web-app to streamline & automate processes at [Suffolk Fresh.](https://suffolkfresh.org/)
 - **[Verbose](https://github.com/tinbob655/verbose-debate-and-discussion)** — A social media and debating platform with daily polls, questions, and an Android/iOS app.
 - **[Banham Education Consultancy](https://github.com/tinbob655/banham-education-consultancy)** — A commercial website with a modern UI that has driven real customer engagement.
 
