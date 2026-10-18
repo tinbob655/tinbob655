@@ -8,7 +8,7 @@ ranging from an 8.4 hectare tomato plantation to an independent educational cons
 
 `Java` `TypeScript` `Vite + React` `Spring Boot` `Node.js` `Docker` `SQLite` `Firebase` `Vercel` `Haskell` `C` `HTML` `SCSS` `Many more`
 
-##  Projects
+##  Major projects
 
 - **[Chess Engine](https://github.com/tinbob655/tinbobs-chess)** — A React + Java Spring boot chess application using a sophisticated minimax algorithm under the hood.
 - **[Suffolk Fresh](https://github.com/tinbob655/suffolk-fresh)** - A full stack web-app to streamline & automate processes at [Suffolk Fresh.](https://suffolkfresh.org/)
