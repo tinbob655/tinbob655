@@ -175,12 +175,20 @@ export default function Home():React.ReactElement {
                                 description={"A fun website I used to start a catering service with my mates!"}
                                 tags={["React", "Vite", "Express", "StripeAPI", "SQLite"]}
                                 url={"https://github.com/tinbob655/toasties-sunday"}
+                                tall
                             />
                             <Project
                                 name={"Connect-4"}
                                 description={"A very simple game of connect-4 written in Java with a basic Swing UI"}
                                 tags={["Java", "Swing", "Minimax", "OOP"]}
                                 url={"https://github.com/tinbob655/java-connect-4"}
+                            />
+                            <Project
+                                name={"Hive"}
+                                description={"An implementation of the game Hive with a working minimax-based bot."}
+                                tags={["Java", "Spring Boot", "Minimax", "React", "Vite", "OOP"]}
+                                url={"https://github.com/tinbob655/hive"}
+                                wide
                             />
                         </div>
                     </React.Fragment>
